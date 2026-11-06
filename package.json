@@ -1,0 +1,14 @@
+{
+  "name": "planwithme",
+  "version": "1.1.0",
+  "private": true,
+  "description": "PlanWithMe website and Android planner",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "start": "node scripts/dev-server.mjs",
+    "test": "node tests/model.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -17,6 +17,6 @@ with zipfile.ZipFile(source_zip,'w',zipfile.ZIP_DEFLATED) as archive:
   for p in sorted((ROOT/folder).rglob('*')):
    rel=p.relative_to(ROOT)
    if p.is_file() and not {'build','dist','__pycache__'}&set(rel.parts) and p.suffix not in {'.jks','.keystore','.pyc'}:archive.write(p,rel)
- for name in ['README.md','.gitignore']:archive.write(ROOT/name,name)
+ for name in ['README.md','.gitignore','package.json','package-lock.json']:archive.write(ROOT/name,name)
 print('Website:',ROOT/'releases'/'web'/f'PlanWithMe-web-{VERSION}.zip')
 print('Source:',source_zip)
