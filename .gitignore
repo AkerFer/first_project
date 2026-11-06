@@ -1,3 +1,8 @@
 build/
+android/build/
+android/dist/
 *.jks
+*.keystore
 *.idsig
+__pycache__/
+.local/
